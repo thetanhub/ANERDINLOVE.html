@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anerdinlove</title> <!-- Updated title -->
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffdde1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #ff4a6e;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #yes {
+            background-color: #ff4a6e;
+            color: white;
+        }
+        #yes:hover {
+            background-color: #ff2e54;
+        }
+        #no {
+            background-color: #cccccc;
+        }
+        .heart {
+            font-size: 50px;
+            color: #ff4a6e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heart">❤️</div>
+    <h1 id="question">I like you weirdo, do you like me back? 💕</h1>
+    <div class="buttons">
+        <button id="yes" onclick="yesClicked()">Yes</button>
+        <button id="no">No</button> 
+    </div>
+
+    <script>
+        function yesClicked() {
+            document.getElementById("question").innerText = "Do something about it ⭐️";
+            document.querySelector(".buttons").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
